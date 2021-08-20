@@ -2956,7 +2956,7 @@ debug@3.1.0:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
+debug@4, debug@4.3.2, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
   integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
@@ -6065,23 +6065,24 @@ knex@0.21.19:
     tildify "2.0.0"
     v8flags "^3.2.0"
 
-knex@0.21.21:
-  version "0.21.21"
-  resolved "https://registry.yarnpkg.com/knex/-/knex-0.21.21.tgz#b1335c75afd15ff83371b096e9cc4c4eafab8c05"
-  integrity sha512-cjw5qO1EzVKjbywcVa61IQJMLt7PfYBRI/2NwCA/B9beXgbw652wDNLz+JM+UKKNsfwprq0ugYqBYc9q4JN36A==
+knex@0.95.10:
+  version "0.95.10"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-0.95.10.tgz#9c41a4f69309bc437f79985cbc0a1e7a3208483e"
+  integrity sha512-I60A8TXcMdeJlE6h7DSgEYyY37S7kgLObz1qlJ7QvPMD6vnKO5dtuLEht5pMia9Qf5BomqVgkWCdVTqcC/ImOA==
   dependencies:
     colorette "1.2.1"
-    commander "^6.2.0"
-    debug "4.3.1"
+    commander "^7.1.0"
+    debug "4.3.2"
+    escalade "^3.1.1"
     esm "^3.2.25"
     getopts "2.2.5"
     interpret "^2.2.0"
-    liftoff "3.1.0"
-    lodash "^4.17.20"
-    pg-connection-string "2.4.0"
+    lodash "^4.17.21"
+    pg-connection-string "2.5.0"
+    rechoir "0.7.0"
+    resolve-from "^5.0.0"
     tarn "^3.0.1"
     tildify "2.0.0"
-    v8flags "^3.2.0"
 
 knex@^0.20:
   version "0.20.15"
@@ -7988,6 +7989,11 @@ pg-connection-string@2.4.0:
   resolved "https://registry.yarnpkg.com/pg-connection-string/-/pg-connection-string-2.4.0.tgz#c979922eb47832999a204da5dbe1ebf2341b6a10"
   integrity sha512-3iBXuv7XKvxeMrIgym7njT+HlZkwZqqGX4Bu9cci8xHZNT+Um1gWKqCsAzcC0d95rcKMU5WBg6YRUcHyV0HZKQ==
 
+pg-connection-string@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/pg-connection-string/-/pg-connection-string-2.5.0.tgz#538cadd0f7e603fc09a12590f3b8a452c2c0cf34"
+  integrity sha512-r5o/V/ORTA6TmUnyWZR9nCj1klXCO2CEKNRlVuJptZe85QuhFayC7WeMic7ndayT5IRIR0S0xFxFi2ousartlQ==
+
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
@@ -8591,6 +8597,13 @@ readdirp@^3.6.0, readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+rechoir@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/rechoir/-/rechoir-0.7.0.tgz#32650fd52c21ab252aa5d65b19310441c7e03aca"
+  integrity sha512-ADsDEH2bvbjltXEP+hTIAmeFekTFK0V2BTxMkok6qILyAJEXV0AFfoWcAq4yfll5VdIMd/RVXq0lR+wQi5ZU3Q==
+  dependencies:
+    resolve "^1.9.0"
+
 rechoir@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
@@ -8788,6 +8801,11 @@ resolve-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
   integrity sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
+
+resolve-from@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
+  integrity sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
 
 resolve-url@^0.2.1:
   version "0.2.1"
