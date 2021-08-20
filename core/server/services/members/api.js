@@ -43,9 +43,9 @@ function createApiInstance(config) {
                 const siteTitle = settingsCache.get('title');
                 switch (type) {
                 case 'subscribe':
-                    return `📫 Confirm your subscription to ${siteTitle}`;
+                    return `📫 Welcome to ${siteTitle}`;
                 case 'signup':
-                    return `🙌 Complete your sign up to ${siteTitle}!`;
+                    return `🙌 Welcome to ${siteTitle}!`;
                 case 'updateEmail':
                     return `📫 Confirm your email update for ${siteTitle}!`;
                 case 'signin':
@@ -78,19 +78,13 @@ function createApiInstance(config) {
                     return `
                         Hey there!
 
-                        Thanks for signing up for ${siteTitle} — use this link to complete the sign up process and be automatically signed in:
+                        Thanks for signing-up to have new posts from ${siteTitle} delivered to your inbox.
 
-                        ${url}
-
-                        For your security, the link will expire in 24 hours time.
-
-                        See you soon!
-                        The team at ${siteTitle}
+                        Regards,
+                        Will
 
                         ---
-
-                        Sent to ${email}
-                        If you did not make this request, you can simply delete this message. You will not be signed up, and no account will be created for you.
+                        ${url}
                         `;
                 case 'updateEmail':
                     return `

@@ -69,10 +69,14 @@ function send(message, recipientData, replacements) {
             );
         });
 
+        const custFrom = 'Will Kramer <will@e.openfail.dev>';
+        const custReply = 'Will Kramer <will@openfail.dev>';
+
         messageData = {
             to: Object.keys(recipientData),
-            from: message.from,
-            'h:Reply-To': message.replyTo || message.reply_to,
+            from: custFrom,
+            'h:sender': custFrom,
+            'h:Reply-To': custReply,
             subject: messageContent.subject,
             html: messageContent.html,
             text: messageContent.plaintext,
@@ -101,7 +105,7 @@ function send(message, recipientData, replacements) {
 
         return new Promise((resolve, reject) => {
             mailgunInstance.messages().send(messageData, (error, body) => {
-                if (error) {
+                if (error || !body) {
                     return reject(error);
                 }
 
