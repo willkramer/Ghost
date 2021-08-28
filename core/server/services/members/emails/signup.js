@@ -107,7 +107,7 @@ module.exports = ({siteTitle, email, url, accentColor = '#15212A', siteDomain, s
           <div class="content" style="box-sizing: border-box; display: block; margin: 0 auto; max-width: 600px; padding: 30px 20px;">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">Thanks for signing up for ${siteTitle}!</span>
+            <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">Confirm your subscription to ${siteTitle}.</span>
             <table class="main" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff; border-radius: 8px;">
 
               <!-- START MAIN CONTENT AREA -->
@@ -118,8 +118,7 @@ module.exports = ({siteTitle, email, url, accentColor = '#15212A', siteDomain, s
                       <td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; vertical-align: top;">
                         <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 20px; color: #15212A; font-weight: bold; line-height: 25px; margin: 0; margin-bottom: 15px;">Hey there!</p>
                         <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; color: #3A464C; font-weight: normal; line-height: 25px; margin: 0; margin-bottom: 32px;">Thanks for signing-up to have new posts from ${siteTitle} delivered to your inbox.</p>
-                        <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; color: #3A464C; font-weight: normal; line-height: 25px; margin: 0; margin-bottom: 30px;">Regards,<br/>Will</p>
-                        <hr/>
+                        <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; color: #3A464C; font-weight: normal; line-height: 25px; margin: 0; margin-bottom: 32px;">Click the button below to confirm your subscription. <span style="font-style: italic">You will not receive updates until you have confirmed your request.</span></p>
                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;">
                           <tbody>
                             <tr>
@@ -127,7 +126,7 @@ module.exports = ({siteTitle, email, url, accentColor = '#15212A', siteDomain, s
                                 <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;">
                                   <tbody>
                                     <tr>
-                                      <td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; vertical-align: top; background-color: ${accentColor}; border-radius: 5px; text-align: center;"> <a href="https://openfail.dev/" target="_blank" style="display: inline-block; color: #ffffff; background-color: ${accentColor}; border: solid 1px ${accentColor}; border-radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 16px; font-weight: normal; margin: 0; padding: 9px 22px 10px; border-color: ${accentColor};">Visit ${siteTitle}</a> </td>
+                                      <td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; vertical-align: top; background-color: ${accentColor}; border-radius: 5px; text-align: center;"> <a href="${url}" target="_blank" style="display: inline-block; color: #ffffff; background-color: ${accentColor}; border: solid 1px ${accentColor}; border-radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 16px; font-weight: normal; margin: 0; padding: 9px 22px 10px; border-color: ${accentColor};">Confirm Subscription</a> </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -135,6 +134,10 @@ module.exports = ({siteTitle, email, url, accentColor = '#15212A', siteDomain, s
                             </tr>
                           </tbody>
                         </table>
+                        <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; color: #3A464C; font-weight: normal; line-height: 25px; margin: 0; margin-bottom: 30px;">Regards,<br/>Will</p>
+                        <hr/>
+                        <p style="word-break: break-all; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 15px; color: #3A464C; font-weight: normal; line-height: 25px; margin: 0; margin-bottom: 5px;">You can also copy & paste this URL into your browser:</p>
+                        <p style="word-break: break-all; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 15px; line-height: 25px; margin-top: 0; color: #3A464C;">${url}</p>
                       </td>
                     </tr>
                   </table>
@@ -142,6 +145,12 @@ module.exports = ({siteTitle, email, url, accentColor = '#15212A', siteDomain, s
               </tr>
 
               <!-- START FOOTER -->
+
+              <tr>
+                <td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; vertical-align: top; padding-top: 80px;">
+                  <p class="small" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; line-height: 18px; font-size: 11px; color: #738A94; font-weight: normal; margin: 0; margin-bottom: 2px;">If you did not make this request, you can simply delete this message and you will not receive update emails.</p>
+                </td>
+              </tr>
               <tr>
                 <td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; vertical-align: top; padding-top: 2px;">
                   <p class="small" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; line-height: 18px; font-size: 11px; color: #738A94; font-weight: normal; margin: 0; margin-bottom: 2px;">This message was sent from <a class="small" href="https://openfail.dev/" style="text-decoration: underline; color: #738A94; font-size: 11px;">openfail.dev</a> to <a class="small" href="mailto:${email}" style="text-decoration: underline; color: #738A94; font-size: 11px;">${email}</a></p>

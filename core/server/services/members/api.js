@@ -10,7 +10,9 @@ const updateEmail = require('./emails/updateEmail');
 const SingleUseTokenProvider = require('./SingleUseTokenProvider');
 const urlUtils = require('../../../shared/url-utils');
 
-const MAGIC_LINK_TOKEN_VALIDITY = 24 * 60 * 60 * 1000;
+// Token is valid for 7 days
+// 7 days * 24 hours * 60 minutes * 60 seconds * 1000 milliseconds(1000ms in 1 second)
+const MAGIC_LINK_TOKEN_VALIDITY = 7 * 24 * 60 * 60 * 1000;
 
 const ghostMailer = new mail.GhostMailer();
 
@@ -45,7 +47,7 @@ function createApiInstance(config) {
                 case 'subscribe':
                     return `📫 Welcome to ${siteTitle}`;
                 case 'signup':
-                    return `🙌 Welcome to ${siteTitle}!`;
+                    return `📫 Confirm Subscription`;
                 case 'updateEmail':
                     return `📫 Confirm your email update for ${siteTitle}!`;
                 case 'signin':
@@ -77,14 +79,18 @@ function createApiInstance(config) {
                 case 'signup':
                     return `
                         Hey there!
-
                         Thanks for signing-up to have new posts from ${siteTitle} delivered to your inbox.
+
+                        Before we can start sending you updates, please use the link below to confirm your subscription request. You will not receive updates until you have confirmed your request.
+
+                        ${url}
 
                         Regards,
                         Will
 
                         ---
-                        ${url}
+                        Sent to ${email}
+                        If you did not make this request, you can simply delete this message and you will not receive update emails.
                         `;
                 case 'updateEmail':
                     return `
