@@ -150,7 +150,7 @@ module.exports = ({siteTitle, email, url, accentColor = '#15212A', siteDomain, s
                     </tr>
                     <tr>
                       <td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; vertical-align: top; padding-top: 2px;">
-                        <p class="small" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; line-height: 18px; font-size: 11px; color: #738A94; font-weight: normal; margin: 0; margin-bottom: 2px;">This message was sent from <a class="small" href="${siteUrl}" style="text-decoration: underline; color: #738A94; font-size: 11px;">${siteDomain}</a> to <a class="small" href="mailto:${email}" style="text-decoration: underline; color: #738A94; font-size: 11px;">${email}</a></p>
+                        <p class="small" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; line-height: 18px; font-size: 11px; color: #738A94; font-weight: normal; margin: 0; margin-bottom: 2px;">This message was sent from <a class="small" href="https://openfail.dev/" style="text-decoration: underline; color: #738A94; font-size: 11px;">openfail.dev</a> to <a class="small" href="mailto:${email}" style="text-decoration: underline; color: #738A94; font-size: 11px;">${email}</a></p>
                       </td>
                     </tr>
 
